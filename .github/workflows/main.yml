@@ -11,6 +11,8 @@ jobs:
     - name: Access Directory
       run: cd workshop-tonkotsu-nodejs
     - name: Run Build
-      run: npm install
+      run: |
+        cd workshop-tonkotsu-nodejs
+        npm install
     - name: Run Tests
       run: npm test
